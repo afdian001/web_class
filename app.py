@@ -88,38 +88,37 @@ class view:
         sabtu = jad['SABTU']
         
 
-        match nom_hari:
-            case 0:
+        if nom_hari == 0:
                 if (jam <= 14):
                     st.table(senin)
                 if (jam >= 14):
                     st.table(selasa)
 
-            case 1:
+        elif nom_hari == 1:
                 if (jam <= 14):
                     st.table(selasa)
                 if (jam >= 14):
                     st.table(rabu)
 
-            case 2:
+        elif nom_hari == 2:
                 if (jam <= 14):
                     st.table(rabu)
                 if (jam >= 14):
                     st.table(kamis)
 
-            case 3:
+        elif nom_hari == 3:
                 if (jam <= 14):
                     st.table(kamis)
                 if (jam >= 14):
                     st.table(jumat)
 
-            case 4:
+        elif nom_hari == 4:
                 if (jam <= 14):
                     st.table(jumat)
                 if (jam >= 14):
                     st.table(sabtu)
 
-            case 5:
+        elif nom_hari == 5:
                 if (jam <= 14):
                     st.table(sabtu)
                 if (jam >= 14):
